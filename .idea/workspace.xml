@@ -32,6 +32,11 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/Chapter10/src/main/java/com/course/server/MyGetMethod.java" />
       <change beforePath="" afterPath="$PROJECT_DIR$/Chapter10/src/main/java/com/course/server/MyPostMethod.java" />
       <change beforePath="" afterPath="$PROJECT_DIR$/Chapter10/src/main/resources/application.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter10/target/classes/Application.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter10/target/classes/application.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter10/target/classes/com/course/config/SwaggerConfig.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter10/target/classes/com/course/server/MyGetMethod.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter10/target/classes/com/course/server/MyPostMethod.class" />
       <change beforePath="" afterPath="$PROJECT_DIR$/Chapter11/Chapter11.iml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/Chapter11/pom.xml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/Chapter11/src/main/java/com/course/Application.java" />
@@ -41,6 +46,19 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/Chapter11/src/main/resources/logback.xml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/Chapter11/src/main/resources/mapper/mysql.xml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/Chapter11/src/main/resources/mybatis-config" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter11/target/classes/application.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter11/target/classes/com/course/Application.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter11/target/classes/com/course/controller/Demo.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter11/target/classes/com/course/module/User.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter11/target/classes/logback.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter11/target/classes/mapper/mysql.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Chapter11/target/classes/mybatis-config" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/]" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/logs/iorder/2018-07-27/debug.0.log" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/logs/iorder/2018-07-27/error.0.log" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/logs/iorder/2018-07-27/info.0.log" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/logs/iorder/2018-07-27/trace.0.log" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/logs/iorder/2018-07-27/warn.0.log" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
@@ -239,7 +257,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -607,7 +625,7 @@
       <workItem from="1532310248161" duration="23622000" />
       <workItem from="1532674565107" duration="2788000" />
       <workItem from="1532677376630" duration="27000" />
-      <workItem from="1532677841020" duration="4884000" />
+      <workItem from="1532677841020" duration="5090000" />
     </task>
     <servers />
   </component>
@@ -644,7 +662,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111089000" />
+    <option name="totallyTimeSpent" value="111295000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -656,7 +674,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
