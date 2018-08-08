@@ -1,0 +1,626 @@
+[INFO ] 2018-08-02 13:55:39 [main] com.course.Application - Starting Application on DESKTOP-272J02D with PID 18196 (C:\Auto\Training\InterfaceTest\Chapter13\target\classes started by lily in C:\Auto\Training\InterfaceTest)
+[INFO ] 2018-08-02 13:55:39 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2018-08-02 13:55:39 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@235834f2: startup date [Thu Aug 02 13:55:39 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 13:55:39 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2018-08-02 13:55:39 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a1bfe246] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-08-02 13:55:39 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2018-08-02 13:55:39 [main] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 2018-08-02 13:55:39 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+[INFO ] 2018-08-02 13:55:39 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-08-02 13:55:39 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1825 ms
+[INFO ] 2018-08-02 13:55:39 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2018-08-02 13:55:39 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-08-02 13:55:39 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-08-02 13:55:39 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-08-02 13:55:39 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-08-02 13:55:39 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.module.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 13:55:39 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.module.User)
+[INFO ] 2018-08-02 13:55:39 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 13:55:39 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 13:55:39 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 13:55:39 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-08-02 13:55:39 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-08-02 13:55:39 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-08-02 13:55:39 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 13:55:39 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-08-02 13:55:39 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@235834f2: startup date [Thu Aug 02 13:55:39 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 13:55:39 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 13:55:39 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 13:55:39 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 13:55:39 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-08-02 13:55:39 [main] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-08-02 13:55:39 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-08-02 13:55:39 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-08-02 13:55:39 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-08-02 13:55:39 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 13:55:39 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 13:55:39 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-08-02 13:55:39 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+[INFO ] 2018-08-02 13:55:39 [main] com.course.Application - Started Application in 3.558 seconds (JVM running for 7.479)
+[INFO ] 2018-08-02 13:55:39 [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-08-02 13:55:39 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-08-02 13:55:39 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+[INFO ] 2018-08-02 13:55:39 [http-nio-8888-exec-1] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 13:55:39 [http-nio-8888-exec-2] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 13:55:39 [http-nio-8888-exec-3] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 13:55:39 [http-nio-8888-exec-7] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 13:55:39 [http-nio-8888-exec-7] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 13:55:39 [http-nio-8888-exec-1] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 13:55:39 [http-nio-8888-exec-1] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 13:55:39 [http-nio-8888-exec-5] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 13:55:39 [http-nio-8888-exec-6] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 13:55:39 [http-nio-8888-exec-10] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 13:55:39 [http-nio-8888-exec-1] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 14:33:15 [main] com.course.Application - Starting Application on DESKTOP-272J02D with PID 2328 (C:\Auto\Training\InterfaceTest\Chapter13\target\classes started by lily in C:\Auto\Training\InterfaceTest)
+[INFO ] 2018-08-02 14:33:15 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2018-08-02 14:33:15 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65045a87: startup date [Thu Aug 02 14:33:15 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 14:33:15 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2018-08-02 14:33:15 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6cb00de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-08-02 14:33:15 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2018-08-02 14:33:15 [main] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 2018-08-02 14:33:15 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+[INFO ] 2018-08-02 14:33:15 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-08-02 14:33:15 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1328 ms
+[INFO ] 2018-08-02 14:33:15 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2018-08-02 14:33:15 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-08-02 14:33:15 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-08-02 14:33:15 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-08-02 14:33:15 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-08-02 14:33:15 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.module.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 14:33:15 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 14:33:15 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.module.User)
+[INFO ] 2018-08-02 14:33:15 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 14:33:15 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 14:33:15 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-08-02 14:33:15 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-08-02 14:33:15 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-08-02 14:33:15 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 14:33:15 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-08-02 14:33:15 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65045a87: startup date [Thu Aug 02 14:33:15 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 14:33:15 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 14:33:15 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 14:33:15 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 14:33:15 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-08-02 14:33:15 [main] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-08-02 14:33:15 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-08-02 14:33:15 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-08-02 14:33:15 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-08-02 14:33:15 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 14:33:15 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 14:33:15 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-08-02 14:33:15 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+[INFO ] 2018-08-02 14:33:15 [main] com.course.Application - Started Application in 3.642 seconds (JVM running for 4.688)
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-2] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-3] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-3] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-5] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-5] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-2] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-2] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-1] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-3] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-3] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-4] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-4] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-5] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-5] com.course.controller.UserManager - getUserInfo获取到的用户数量是4
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-9] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-9] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-10] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-2] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-2] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-1] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-1] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-3] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-3] com.course.controller.UserManager - getUserInfo获取到的用户数量是5
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-7] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-7] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-8] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-10] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-10] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-1] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-1] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-3] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-3] com.course.controller.UserManager - getUserInfo获取到的用户数量是6
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-7] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-7] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-8] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-9] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-9] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-2] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-2] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-1] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-1] com.course.controller.UserManager - getUserInfo获取到的用户数量是7
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-6] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-6] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-7] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-8] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-8] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-9] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-9] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-10] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-10] com.course.controller.UserManager - getUserInfo获取到的用户数量是8
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-4] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-4] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-5] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-6] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-6] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-7] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-7] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-8] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-8] com.course.controller.UserManager - getUserInfo获取到的用户数量是9
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-1] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-1] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-3] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-4] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-4] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-5] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-5] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-6] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 14:33:15 [http-nio-8888-exec-6] com.course.controller.UserManager - getUserInfo获取到的用户数量是10
+[INFO ] 2018-08-02 15:56:05 [main] com.course.Application - Starting Application on DESKTOP-272J02D with PID 16584 (C:\Auto\Training\InterfaceTest\Chapter13\target\classes started by lily in C:\Auto\Training\InterfaceTest)
+[INFO ] 2018-08-02 15:56:05 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2018-08-02 15:56:05 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7216fb24: startup date [Thu Aug 02 15:56:05 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 15:56:05 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2018-08-02 15:56:05 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$937ac691] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-08-02 15:56:05 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2018-08-02 15:56:05 [main] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 2018-08-02 15:56:05 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+[INFO ] 2018-08-02 15:56:05 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-08-02 15:56:05 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1543 ms
+[INFO ] 2018-08-02 15:56:05 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2018-08-02 15:56:05 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-08-02 15:56:05 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-08-02 15:56:05 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-08-02 15:56:05 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-08-02 15:56:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.module.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 15:56:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 15:56:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.module.User)
+[INFO ] 2018-08-02 15:56:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 15:56:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 15:56:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-08-02 15:56:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-08-02 15:56:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-08-02 15:56:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 15:56:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-08-02 15:56:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7216fb24: startup date [Thu Aug 02 15:56:05 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 15:56:05 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 15:56:05 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 15:56:05 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 15:56:05 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-08-02 15:56:05 [main] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-08-02 15:56:05 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-08-02 15:56:05 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-08-02 15:56:05 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-08-02 15:56:05 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 15:56:05 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 15:56:05 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-08-02 15:56:05 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+[INFO ] 2018-08-02 15:56:05 [main] com.course.Application - Started Application in 3.753 seconds (JVM running for 5.188)
+[INFO ] 2018-08-02 15:59:17 [main] com.course.Application - Starting Application on DESKTOP-272J02D with PID 15452 (C:\Auto\Training\InterfaceTest\Chapter13\target\classes started by lily in C:\Auto\Training\InterfaceTest)
+[INFO ] 2018-08-02 15:59:17 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2018-08-02 15:59:17 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65045a87: startup date [Thu Aug 02 15:59:18 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 15:59:17 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2018-08-02 15:59:17 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7dea300a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-08-02 15:59:17 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2018-08-02 15:59:17 [main] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 2018-08-02 15:59:17 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+[INFO ] 2018-08-02 15:59:17 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-08-02 15:59:17 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1618 ms
+[INFO ] 2018-08-02 15:59:17 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2018-08-02 15:59:17 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-08-02 15:59:17 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-08-02 15:59:17 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-08-02 15:59:17 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-08-02 15:59:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.module.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 15:59:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 15:59:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.module.User)
+[INFO ] 2018-08-02 15:59:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 15:59:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 15:59:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-08-02 15:59:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-08-02 15:59:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-08-02 15:59:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 15:59:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-08-02 15:59:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65045a87: startup date [Thu Aug 02 15:59:18 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 15:59:17 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 15:59:17 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 15:59:17 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 15:59:17 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-08-02 15:59:17 [main] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-08-02 15:59:17 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-08-02 15:59:17 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-08-02 15:59:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-08-02 15:59:17 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 15:59:17 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 15:59:17 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-08-02 15:59:17 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+[INFO ] 2018-08-02 15:59:17 [main] com.course.Application - Started Application in 3.92 seconds (JVM running for 5.361)
+[INFO ] 2018-08-02 15:59:17 [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-08-02 15:59:17 [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-08-02 15:59:17 [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+[INFO ] 2018-08-02 15:59:17 [http-nio-8888-exec-2] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 15:59:17 [http-nio-8888-exec-3] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 15:59:17 [http-nio-8888-exec-3] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 15:59:17 [http-nio-8888-exec-5] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 15:59:17 [http-nio-8888-exec-5] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 15:59:17 [http-nio-8888-exec-7] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 15:59:17 [http-nio-8888-exec-7] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 16:54:35 [main] com.course.Application - Starting Application on DESKTOP-272J02D with PID 12448 (C:\Auto\Training\InterfaceTest\Chapter13\target\classes started by lily in C:\Auto\Training\InterfaceTest)
+[INFO ] 2018-08-02 16:54:35 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2018-08-02 16:54:35 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@235834f2: startup date [Thu Aug 02 16:54:35 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 16:54:35 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2018-08-02 16:54:35 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a572fb8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-08-02 16:54:35 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2018-08-02 16:54:35 [main] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 2018-08-02 16:54:35 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+[INFO ] 2018-08-02 16:54:35 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-08-02 16:54:35 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1398 ms
+[INFO ] 2018-08-02 16:54:35 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2018-08-02 16:54:35 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-08-02 16:54:35 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-08-02 16:54:35 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-08-02 16:54:35 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-08-02 16:54:35 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.module.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 16:54:35 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 16:54:35 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 16:54:35 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.module.User)
+[INFO ] 2018-08-02 16:54:35 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 16:54:35 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-08-02 16:54:35 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-08-02 16:54:35 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-08-02 16:54:35 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 16:54:35 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-08-02 16:54:35 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@235834f2: startup date [Thu Aug 02 16:54:35 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 16:54:35 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 16:54:35 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 16:54:35 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 16:54:35 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-08-02 16:54:35 [main] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-08-02 16:54:35 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-08-02 16:54:35 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-08-02 16:54:35 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-08-02 16:54:35 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 16:54:35 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 16:54:35 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-08-02 16:54:35 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+[INFO ] 2018-08-02 16:54:35 [main] com.course.Application - Started Application in 3.085 seconds (JVM running for 3.977)
+[INFO ] 2018-08-02 16:54:35 [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-08-02 16:54:35 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-08-02 16:54:35 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+[INFO ] 2018-08-02 16:54:35 [http-nio-8888-exec-1] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 16:54:35 [http-nio-8888-exec-1] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 16:54:35 [http-nio-8888-exec-2] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 16:54:35 [http-nio-8888-exec-5] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 16:54:35 [http-nio-8888-exec-5] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 16:54:35 [http-nio-8888-exec-6] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 16:54:35 [http-nio-8888-exec-6] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 16:54:35 [http-nio-8888-exec-7] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 16:54:35 [http-nio-8888-exec-7] com.course.controller.UserManager - getUserInfo获取到的用户数量是11
+[INFO ] 2018-08-02 16:54:35 [http-nio-8888-exec-1] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 16:54:35 [http-nio-8888-exec-2] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 17:02:22 [main] com.course.Application - Starting Application on DESKTOP-272J02D with PID 14636 (C:\Auto\Training\InterfaceTest\Chapter13\target\classes started by lily in C:\Auto\Training\InterfaceTest)
+[INFO ] 2018-08-02 17:02:22 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2018-08-02 17:02:22 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ceb80a1: startup date [Thu Aug 02 17:02:22 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 17:02:22 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2018-08-02 17:02:22 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9d1eb9f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-08-02 17:02:22 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2018-08-02 17:02:22 [main] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 2018-08-02 17:02:22 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+[INFO ] 2018-08-02 17:02:22 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-08-02 17:02:22 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1674 ms
+[INFO ] 2018-08-02 17:02:22 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2018-08-02 17:02:22 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-08-02 17:02:22 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-08-02 17:02:22 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-08-02 17:02:22 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-08-02 17:02:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.module.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 17:02:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 17:02:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 17:02:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.module.User)
+[INFO ] 2018-08-02 17:02:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 17:02:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-08-02 17:02:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-08-02 17:02:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-08-02 17:02:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 17:02:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-08-02 17:02:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ceb80a1: startup date [Thu Aug 02 17:02:22 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 17:02:22 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 17:02:22 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 17:02:22 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 17:02:22 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-08-02 17:02:22 [main] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-08-02 17:02:22 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-08-02 17:02:22 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-08-02 17:02:22 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-08-02 17:02:22 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 17:02:22 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 17:02:22 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-08-02 17:02:22 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+[INFO ] 2018-08-02 17:02:22 [main] com.course.Application - Started Application in 3.838 seconds (JVM running for 6.168)
+[INFO ] 2018-08-02 17:02:22 [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-08-02 17:02:22 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-08-02 17:02:22 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+[INFO ] 2018-08-02 17:02:22 [http-nio-8888-exec-1] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 17:02:22 [http-nio-8888-exec-1] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 17:02:22 [http-nio-8888-exec-2] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 17:02:22 [http-nio-8888-exec-3] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:02:22 [http-nio-8888-exec-3] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 17:02:22 [http-nio-8888-exec-6] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 17:02:22 [http-nio-8888-exec-6] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 17:02:22 [http-nio-8888-exec-4] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 17:02:22 [http-nio-8888-exec-7] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:02:22 [http-nio-8888-exec-7] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 17:08:25 [main] com.course.Application - Starting Application on DESKTOP-272J02D with PID 15176 (C:\Auto\Training\InterfaceTest\Chapter13\target\classes started by lily in C:\Auto\Training\InterfaceTest)
+[INFO ] 2018-08-02 17:08:25 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2018-08-02 17:08:25 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55182842: startup date [Thu Aug 02 17:08:25 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 17:08:25 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2018-08-02 17:08:25 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$49cd6a0f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-08-02 17:08:25 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2018-08-02 17:08:25 [main] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 2018-08-02 17:08:25 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+[INFO ] 2018-08-02 17:08:25 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-08-02 17:08:25 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1373 ms
+[INFO ] 2018-08-02 17:08:25 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2018-08-02 17:08:25 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-08-02 17:08:25 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-08-02 17:08:25 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-08-02 17:08:25 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-08-02 17:08:25 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.module.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 17:08:25 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 17:08:25 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.module.User)
+[INFO ] 2018-08-02 17:08:25 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 17:08:25 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 17:08:25 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-08-02 17:08:25 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-08-02 17:08:25 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-08-02 17:08:25 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 17:08:25 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-08-02 17:08:25 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55182842: startup date [Thu Aug 02 17:08:25 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 17:08:25 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 17:08:25 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 17:08:25 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 17:08:25 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-08-02 17:08:25 [main] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-08-02 17:08:25 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-08-02 17:08:25 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-08-02 17:08:25 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-08-02 17:08:25 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 17:08:25 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 17:08:25 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-08-02 17:08:25 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+[INFO ] 2018-08-02 17:08:25 [main] com.course.Application - Started Application in 3.283 seconds (JVM running for 4.015)
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-1] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-1] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-2] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-3] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-3] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-4] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-4] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-5] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-5] com.course.controller.UserManager - getUserInfo获取到的用户数量是14
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-9] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-9] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-10] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-1] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-1] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-2] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-2] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-3] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-3] com.course.controller.UserManager - getUserInfo获取到的用户数量是15
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-4] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-4] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-5] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:08:25 [http-nio-8888-exec-5] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-02 17:14:58 [main] com.course.Application - Starting Application on DESKTOP-272J02D with PID 15188 (C:\Auto\Training\InterfaceTest\Chapter13\target\classes started by lily in C:\Auto\Training\InterfaceTest)
+[INFO ] 2018-08-02 17:14:58 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2018-08-02 17:14:58 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3270d194: startup date [Thu Aug 02 17:14:58 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 17:14:58 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2018-08-02 17:14:58 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$669dac1e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-08-02 17:14:58 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2018-08-02 17:14:58 [main] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 2018-08-02 17:14:58 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+[INFO ] 2018-08-02 17:14:58 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-08-02 17:14:58 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1301 ms
+[INFO ] 2018-08-02 17:14:58 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2018-08-02 17:14:58 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-08-02 17:14:58 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-08-02 17:14:58 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-08-02 17:14:58 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-08-02 17:14:58 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.module.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 17:14:58 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 17:14:58 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.module.User)
+[INFO ] 2018-08-02 17:14:58 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 17:14:58 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 17:14:58 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-08-02 17:14:58 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-08-02 17:14:58 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-08-02 17:14:58 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 17:14:58 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-08-02 17:14:58 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3270d194: startup date [Thu Aug 02 17:14:58 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 17:14:58 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 17:14:58 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 17:14:58 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 17:14:58 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-08-02 17:14:58 [main] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-08-02 17:14:58 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-08-02 17:14:58 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-08-02 17:14:58 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-08-02 17:14:58 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 17:14:58 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 17:14:58 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-08-02 17:14:58 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+[INFO ] 2018-08-02 17:14:58 [main] com.course.Application - Started Application in 3.167 seconds (JVM running for 3.779)
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-1] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-1] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-2] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-3] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-3] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-4] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-4] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-5] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-5] com.course.controller.UserManager - getUserInfo获取到的用户数量是16
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-6] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-6] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-9] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-9] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-8] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-8] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-10] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-2] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-2] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-4] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-4] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-5] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-6] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-6] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-9] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-9] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-7] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-7] com.course.controller.UserManager - getUserInfo获取到的用户数量是4
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-8] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-8] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-10] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-10] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-2] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-2] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-3] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-4] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-4] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-5] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-5] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-6] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-6] com.course.controller.UserManager - getUserInfo获取到的用户数量是4
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-7] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-7] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-8] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-10] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-10] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-2] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-2] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-3] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-4] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-4] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-5] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-5] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-6] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-6] com.course.controller.UserManager - getUserInfo获取到的用户数量是6
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-9] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-9] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-7] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-7] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-10] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-10] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-1] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-2] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-2] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-3] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-3] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-4] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-4] com.course.controller.UserManager - getUserInfo获取到的用户数量是7
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-5] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-5] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-6] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-6] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-7] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-7] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-8] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-10] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-10] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-1] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-1] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-2] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-2] com.course.controller.UserManager - getUserInfo获取到的用户数量是8
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-3] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-3] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-4] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-4] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-6] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-6] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-9] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-7] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-7] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-8] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-8] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-1] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-1] com.course.controller.UserManager - getUserInfo获取到的用户数量是9
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-2] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-2] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-3] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-3] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-5] com.course.controller.UserManager - 查询到的结果是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-5] com.course.controller.UserManager - 登陆的用户是：zhangsan
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-6] com.course.controller.UserManager - 查询到的结果是0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-9] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-9] com.course.controller.UserManager - 添加用户的数量是：1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-8] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-8] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-1] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-1] com.course.controller.UserManager - getUserInfo获取到的用户数量是10
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-2] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-2] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-3] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-02 17:14:58 [http-nio-8888-exec-3] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-02 17:54:25 [main] com.course.Application - Starting Application on DESKTOP-272J02D with PID 4328 (C:\Auto\Training\InterfaceTest\Chapter13\target\classes started by lily in C:\Auto\Training\InterfaceTest)
+[INFO ] 2018-08-02 17:54:25 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2018-08-02 17:54:25 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2018-08-02 17:54:25 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1477089c: startup date [Thu Aug 02 17:54:25 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 17:54:25 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$937ac691] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-08-02 17:54:25 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2018-08-02 17:54:25 [main] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 2018-08-02 17:54:25 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+[INFO ] 2018-08-02 17:54:25 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-08-02 17:54:25 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8500 ms
+[INFO ] 2018-08-02 17:54:25 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2018-08-02 17:54:25 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-08-02 17:54:25 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-08-02 17:54:25 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-08-02 17:54:25 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-08-02 17:54:59 [main] com.course.Application - Starting Application on DESKTOP-272J02D with PID 14580 (C:\Auto\Training\InterfaceTest\Chapter13\target\classes started by lily in C:\Auto\Training\InterfaceTest)
+[INFO ] 2018-08-02 17:54:59 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2018-08-02 17:54:59 [main] com.course.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2018-08-02 17:54:59 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1477089c: startup date [Thu Aug 02 17:54:59 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 17:54:59 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$284e0c33] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-08-02 17:54:59 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+[INFO ] 2018-08-02 17:54:59 [main] o.a.catalina.core.StandardService - Starting service Tomcat
+[INFO ] 2018-08-02 17:54:59 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+[INFO ] 2018-08-02 17:54:59 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-08-02 17:54:59 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8633 ms
+[INFO ] 2018-08-02 17:54:59 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2018-08-02 17:54:59 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-08-02 17:54:59 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-08-02 17:54:59 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-08-02 17:54:59 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-08-02 17:54:59 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.module.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 17:54:59 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 17:54:59 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.module.User)
+[INFO ] 2018-08-02 17:54:59 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)
+[INFO ] 2018-08-02 17:54:59 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 17:54:59 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-08-02 17:54:59 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-08-02 17:54:59 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-08-02 17:54:59 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-02 17:54:59 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-08-02 17:54:59 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1477089c: startup date [Thu Aug 02 17:54:59 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-02 17:54:59 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 17:54:59 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 17:54:59 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-02 17:54:59 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-08-02 17:54:59 [main] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2018-08-02 17:54:59 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-08-02 17:54:59 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2018-08-02 17:54:59 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-08-02 17:54:59 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 17:54:59 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+[INFO ] 2018-08-02 17:54:59 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-08-02 17:54:59 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+[INFO ] 2018-08-02 17:54:59 [main] com.course.Application - Started Application in 24.544 seconds (JVM running for 37.727)

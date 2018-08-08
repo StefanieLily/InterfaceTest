@@ -1,0 +1,238 @@
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-7] o.s.b.w.f.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@58727a37
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-7] o.s.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/v1/getUserInfo]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-7] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /v1/getUserInfo
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-7] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.util.List<com.course.module.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.module.User)]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-7] o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userManager'
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-7] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read [class com.course.module.User] as "application/json;charset=UTF-8" with [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@d5af0a5]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-7] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-7] com.course.getUserInfo - ==>  Preparing: SELECT * FROM user where id=? 
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-7] com.course.getUserInfo - ==> Parameters: 1(Integer)
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-7] com.course.getUserInfo - <==      Total: 1
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-7] o.s.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-7] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [[User(id=1, userName=zhangsan, password=123456, age=18, sex=0, permission=0, isDelete=0)]] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@d5af0a5]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-7] o.s.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-7] o.s.web.servlet.DispatcherServlet - Successfully completed request
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-7] o.s.b.w.f.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@58727a37
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-8] o.s.b.w.f.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@58727a37
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-8] o.s.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/v1/getUserInfo]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /v1/getUserInfo
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.util.List<com.course.module.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.module.User)]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-8] o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userManager'
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-8] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read [class com.course.module.User] as "application/json;charset=UTF-8" with [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@d5af0a5]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-8] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-8] com.course.getUserInfo - ==>  Preparing: SELECT * FROM user where sex=? 
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-8] com.course.getUserInfo - ==> Parameters: 0(String)
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-8] com.course.getUserInfo - <==      Total: 3
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-8] o.s.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-8] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [[User(id=1, userName=zhangsan, password=123456, age=18, sex=0, permission=0, isDelete=0), User(id=3, userName=wangwu, password=123456, age=25, sex=0, permission=1, isDelete=0), User(id=5, userName=zhang1, password=123, age=30, sex=0, permission=0, isDelete=0)]] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@d5af0a5]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-8] o.s.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-8] o.s.web.servlet.DispatcherServlet - Successfully completed request
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-8] o.s.b.w.f.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@58727a37
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-9] o.s.b.w.f.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@58727a37
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-9] o.s.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/v1/updateUserInfo]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-9] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /v1/updateUserInfo
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-9] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-9] o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userManager'
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-9] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read [class com.course.module.User] as "application/json;charset=UTF-8" with [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@d5af0a5]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-9] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-9] com.course.updateUserInfo - ==>  Preparing: UPDATE user SET userName=? where id = ? 
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-9] com.course.updateUserInfo - ==> Parameters: hahahaha(String), 0(Integer)
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-9] com.course.updateUserInfo - <==    Updates: 0
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-9] o.s.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-9] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [0] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@d5af0a5]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-9] o.s.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-9] o.s.web.servlet.DispatcherServlet - Successfully completed request
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-9] o.s.b.w.f.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@58727a37
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-6] o.s.b.w.f.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@58727a37
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-6] o.s.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/v1/updateUserInfo]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /v1/updateUserInfo
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-6] o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userManager'
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read [class com.course.module.User] as "application/json;charset=UTF-8" with [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@d5af0a5]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-6] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-6] com.course.updateUserInfo - ==>  Preparing: UPDATE user SET isDelete=? where id = ? 
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-6] com.course.updateUserInfo - ==> Parameters: 1(String), 0(Integer)
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-6] com.course.updateUserInfo - <==    Updates: 0
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-6] o.s.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [0] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@d5af0a5]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-6] o.s.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-6] o.s.web.servlet.DispatcherServlet - Successfully completed request
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-6] o.s.b.w.f.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@58727a37
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-1] o.s.b.w.f.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@58727a37
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/v1/getUserInfo]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /v1/getUserInfo
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.util.List<com.course.module.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.module.User)]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-1] o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userManager'
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read [class com.course.module.User] as "application/json;charset=UTF-8" with [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@d5af0a5]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-1] com.course.getUserInfo - ==>  Preparing: SELECT * FROM user where id=? 
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-1] com.course.getUserInfo - ==> Parameters: 1(Integer)
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-1] com.course.getUserInfo - <==      Total: 1
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-1] o.s.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [[User(id=1, userName=zhangsan, password=123456, age=18, sex=0, permission=0, isDelete=0)]] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@d5af0a5]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet - Successfully completed request
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-1] o.s.b.w.f.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@58727a37
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-2] o.s.b.w.f.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@58727a37
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/v1/getUserInfo]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /v1/getUserInfo
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public java.util.List<com.course.module.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.module.User)]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-2] o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userManager'
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-2] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read [class com.course.module.User] as "application/json;charset=UTF-8" with [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@d5af0a5]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-2] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-2] com.course.getUserInfo - ==>  Preparing: SELECT * FROM user where sex=? 
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-2] com.course.getUserInfo - ==> Parameters: 0(String)
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-2] com.course.getUserInfo - <==      Total: 3
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-2] o.s.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-2] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [[User(id=1, userName=zhangsan, password=123456, age=18, sex=0, permission=0, isDelete=0), User(id=3, userName=wangwu, password=123456, age=25, sex=0, permission=1, isDelete=0), User(id=5, userName=zhang1, password=123, age=30, sex=0, permission=0, isDelete=0)]] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@d5af0a5]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet - Successfully completed request
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-2] o.s.b.w.f.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@58727a37
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.b.w.f.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@58727a37
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/v1/updateUserInfo]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /v1/updateUserInfo
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userManager'
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Failed to resolve argument 1 of type 'com.course.module.User'
+org.springframework.web.HttpMediaTypeNotSupportedException: Invalid mime type "application-json": does not contain '/'
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:170)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolving exception from handler [public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)]: org.springframework.web.HttpMediaTypeNotSupportedException: Invalid mime type "application-json": does not contain '/'
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolving exception from handler [public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)]: org.springframework.web.HttpMediaTypeNotSupportedException: Invalid mime type "application-json": does not contain '/'
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolving exception from handler [public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)]: org.springframework.web.HttpMediaTypeNotSupportedException: Invalid mime type "application-json": does not contain '/'
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet - Successfully completed request
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.b.w.f.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@58727a37
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/error]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /error
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'basicErrorController'
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Written [{timestamp=Tue Aug 07 13:35:04 CST 2018, status=415, error=Unsupported Media Type, exception=org.springframework.web.HttpMediaTypeNotSupportedException, message=Invalid mime type "application-json": does not contain '/', path=/v1/updateUserInfo}] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@d5af0a5]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-3] o.s.web.servlet.DispatcherServlet - Successfully completed request
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.b.w.f.OrderedRequestContextFilter - Bound request context to thread: org.apache.catalina.connector.RequestFacade@58727a37
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/v1/updateUserInfo]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /v1/updateUserInfo
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'userManager'
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Failed to resolve argument 1 of type 'com.course.module.User'
+org.springframework.web.HttpMediaTypeNotSupportedException: Invalid mime type "application-json": does not contain '/'
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:170)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:128)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:158)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolving exception from handler [public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)]: org.springframework.web.HttpMediaTypeNotSupportedException: Invalid mime type "application-json": does not contain '/'
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.w.s.m.a.ResponseStatusExceptionResolver - Resolving exception from handler [public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)]: org.springframework.web.HttpMediaTypeNotSupportedException: Invalid mime type "application-json": does not contain '/'
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolving exception from handler [public int com.course.controller.UserManager.updateUser(javax.servlet.http.HttpServletRequest,com.course.module.User)]: org.springframework.web.HttpMediaTypeNotSupportedException: Invalid mime type "application-json": does not contain '/'
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.web.servlet.DispatcherServlet - Successfully completed request
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.b.w.f.OrderedRequestContextFilter - Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@58727a37
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.web.servlet.DispatcherServlet - DispatcherServlet with name 'dispatcherServlet' processing POST request for [/error]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Looking up handler method for path /error
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Returning handler method [public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'basicErrorController'
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Written [{timestamp=Tue Aug 07 13:35:04 CST 2018, status=415, error=Unsupported Media Type, exception=org.springframework.web.HttpMediaTypeNotSupportedException, message=Invalid mime type "application-json": does not contain '/', path=/v1/updateUserInfo}] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@d5af0a5]
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.web.servlet.DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+[DEBUG] 2018-08-06 16:36:41 [http-nio-8888-exec-4] o.s.web.servlet.DispatcherServlet - Successfully completed request

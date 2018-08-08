@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.course">
+    <!--登陆接口sql-->
+    <select id="login" parameterType="com.course.module.User" resultType="Integer">
+        SELECT COUNT(*) FROM user WHERE userName=#{userName} AND password=#{password}
+    </select>
+
+    <!--添加用户接口sql-->
+    <insert id="addUser" parameterType="com.course.module.User">
+        INSERT INTO
+        user (userName,password,sex,age,permission,isDelete)
+        VALUES
+        (#{userName},#{password},#{sex},#{age},#{permission},#{isDelete});
+    </insert>
+
+    <!--获取用户sql-->
+    <select id="getUserInfo" parameterType="com.course.module.User" resultType="com.course.module.User">
+            SELECT * FROM user
+            <trim prefix="where" prefixOverrides="and">
+                <if test="null !=id and '' !=id">
+                    and id=#{id}
+                </if>
+                <if test="null !=userName and ''!=userName">
+                    and userName=#{userName}
+                </if>
+                <if test="null !=password and ''!=password">
+                    and password=#{password}
+                </if>
+                <if test="null !=sex and ''!=sex">
+                    and sex=#{sex}
+                </if>
+                <if test="null !=age and ''!=age">
+                    and age=#{age}
+                </if>
+                <if test="null !=permission and ''!=permission">
+                    and permission=#{permission}
+                </if>
+                <if test="null !=isDelete and ''!=isDelete">
+                    and isDelete=#{isDelete}
+                </if>
+            </trim>
+
+    </select>
+
+    <!--更新或删除用户信息-->
+    <update id="updateUserInfo" parameterType="com.course.module.User">
+        UPDATE user
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="null!=userName and ''!=userName">
+                userName=#{userName},
+            </if>
+            <if test="null!=sex and ''!=sex">
+                sex=#{sex},
+            </if>
+            <if test="null!=age and ''!=age">
+                age=#{age},
+            </if>
+            <if test="null!=permission and ''!=permission">
+                permission=#{permission},
+            </if>
+            <if test="null!=isDelete and ''!=isDelete">
+                isDelete=#{isDelete},
+            </if>
+        </trim>
+        where id = #{id}
+    </update>
+</mapper>

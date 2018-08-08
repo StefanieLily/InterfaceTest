@@ -1,0 +1,4 @@
+[WARN ] 2018-08-02 13:55:39 [http-nio-8888-exec-8] o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+[WARN ] 2018-08-02 13:55:39 [http-nio-8888-exec-9] o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+[WARN ] 2018-08-02 13:55:39 [http-nio-8888-exec-2] o.s.web.servlet.PageNotFound - Request method 'GET' not supported
+[WARN ] 2018-08-02 14:33:15 [http-nio-8888-exec-7] o.s.web.servlet.PageNotFound - Request method 'GET' not supported

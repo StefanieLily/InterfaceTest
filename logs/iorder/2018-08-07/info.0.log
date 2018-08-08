@@ -1,0 +1,12 @@
+[INFO ] 2018-08-06 16:36:41 [http-nio-8888-exec-7] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-06 16:36:41 [http-nio-8888-exec-7] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-06 16:36:41 [http-nio-8888-exec-8] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-06 16:36:41 [http-nio-8888-exec-8] com.course.controller.UserManager - getUserInfo获取到的用户数量是3
+[INFO ] 2018-08-06 16:36:41 [http-nio-8888-exec-9] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-06 16:36:41 [http-nio-8888-exec-9] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-06 16:36:41 [http-nio-8888-exec-6] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-06 16:36:41 [http-nio-8888-exec-6] com.course.controller.UserManager - 更新数据的条目数为：0
+[INFO ] 2018-08-06 16:36:41 [http-nio-8888-exec-1] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-06 16:36:41 [http-nio-8888-exec-1] com.course.controller.UserManager - getUserInfo获取到的用户数量是1
+[INFO ] 2018-08-06 16:36:41 [http-nio-8888-exec-2] com.course.controller.UserManager - cookies验证通过
+[INFO ] 2018-08-06 16:36:41 [http-nio-8888-exec-2] com.course.controller.UserManager - getUserInfo获取到的用户数量是3
